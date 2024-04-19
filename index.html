@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rosen Trichkov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+
+  <section id="navigationBar">
+    <div class="section1">
+      <img id="logo" src="./images/logo.png" alt="logo">
+      <div id="email"><a class="links" href="mailto: rosentrichkov9@gmail.com">rosentrichkov5@gmail.com</a></div>
+
+    <div id="topbar">
+      <div id="about"><a class="links" href="#whoIam">About</a></div>
+      <div id="ski"><a class="links" href="#skills">Skills</a></div>
+      <div id="projects"><a class="links" href="#examplesOfWork">Projects</a></div>
+    </div>
+      <a id="cv" href="#email" ><button id="button">Download CV</button></a>
+
+    <div id="clickables">
+    
+      <button class="dbutton" onclick="dropdownFunction()"></button><svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" fill="white" class="icon" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" onclick="df()"/>
+      </svg></button>
+    
+
+    <div class="dropdown-content" id="dropdown">
+      <a class="dlinks" href="#whoIam">About</a>
+      <a class="dlinks" href="#skills">Skills</a>
+      <a class="dlinks" href="#examplesOfWork">Projects</a>
+    </div>
+    </div>
+  </div>
+  </section>
+
+    <section id="nameAndDescription">
+      <div class="section2">
+        <img class="firstBackground" src="./images/darkBlueSky.png" alt="Sunset" />
+        <h1 id="heading1">Hello, my name is Rosen Trichkov</h1>
+        <p id="firstParagraph">
+        I am an aspiriring full-stack developer who is capable of creating beautiful
+        websites.
+        </p>
+      </div>
+    </section>
+
+    <section id="whoIam">
+      <div class="section3">
+        <img class="myFace" src="./images/myFace.jpg" alt="image of me">
+        <h2>I am a former chemical engineer looking to become a proffessional programmer. </h2>
+      </div>
+    </section>
+
+  <section id="skills">
+    <div class="skills">
+      <div>
+        <img src="./images/front-end.png" alt="" id="imgSkills1">
+      </div>
+      <div id="skills1">
+        <h3>Front-End Developer Skills</h3>
+        <div id="skills1List">
+          <p>
+          <ul id="list1">
+            <li id="htmlSkill">HTML5</li>
+            <li id="cssSkill">CSS3</li>
+            <li id="jsSkill">JavaScript</li>
+            <li id="bootSkill">Bootstrap</li>
+            <li id="jQuerySkill">jQuery</li>
+            <li id="reactSkill">React js</li>
+          </ul>
+        </p>
+        </div>
+      </div>
+      <div>
+        <img src="./images/back-end.png" alt="" id="imgSkills2">
+      </div>
+        <div id="skills2">
+          
+      <h3>Back-End Developer Skills</h3>
+      <div id="skills2List">
+      <p>
+          <ul id="list2">
+            <li>Node js</li>
+            <li>Express js</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>PostgreSQL</li>
+            <li>MongoDB</li>
+          </ul>
+      </p>
+      </div>
+        </div>
+    </div>
+
+  </section>
+
+  <section id="examplesOfWork">
+    <div id="work" class="container">
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button id="button1" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button id="button2" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <!--<button id="button3" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>-->
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="project1" src="./images/OrderFood.png" class="d-block w-100" alt="Order Food">
+          </div>
+          <div class="carousel-item">
+            <img id="project2" src="./images/DrumKit.png" class="d-block w-100" alt="Drum Kit">
+          </div>
+          <!--<div class="carousel-item">
+            <img id="project3" src="./images/beach.png" class="d-block w-100" alt="...">
+          </div>-->
+        </div>
+        <button id="arrowPrevious" class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button id="arrowNext" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    </section>
+
+    <section id="footerSection">
+      <div id="footer" class="container">
+        <footer class="py-2 my-0">
+          <ul class="nav justify-content-center border-bottom pb-2 mb-3">
+            <li class="nav-item"><a href="#navigationBar" class="nav-link px-2 text-light">Home</a></li>
+            <li class="nav-item"><a href="#whoIam" class="nav-link px-2 text-light">About</a></li>
+            <li class="nav-item"><a href="#examplesOfWork" class="nav-link px-2 text-light">Projects</a></li>
+            <li class="nav-item"><a href="#navigationBar" class="nav-link px-2 text-light">Contacts</a></li>
+          </ul>
+            <p class="text-center text-light">© Rosen Trichkov</p>
+        </footer>
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

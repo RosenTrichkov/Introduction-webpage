@@ -1,0 +1,930 @@
+body {
+    margin: 0px;
+    height: 100%;
+    padding: 0px;
+    width: 100%;
+}
+
+.section1{
+    display: inline-flex;
+    gap: 50px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    padding-top: 0px;
+    background-color: #222B46;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#topbar{
+    display: inline-flex;
+    gap: 50px;
+    flex-direction: row;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    font-size: 1.2rem;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    background-color: #222B46;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#clickables{
+    margin-left: -30px;
+}
+
+.icon{
+    background-color: #222B46;
+    display: none;
+}
+
+.dbutton{
+    background-color: #222B46;
+    border: 0px;
+    display: none;
+}
+
+.dropdown-content{
+    display: none;
+    position: fixed;
+    top: 55px;
+    right: 0px;
+    background-color:#85B742;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a:hover{
+    background-color: green;
+}
+
+.dlinks{
+        text-decoration: none;
+        color: white;
+        float: none;
+        padding: 8px 12px;
+        display: block;
+        text-align: left;
+        font-size: 1.1rem;
+}
+
+.show {
+    display: block;
+  }
+
+.hide{
+    display: none;
+}
+
+#email a:hover{
+    background: #85B742;
+    font-size: 1.3rem;
+}
+
+#about a:hover{
+    background: #85B742;
+    font-size: 1.3rem;
+    margin-left: -4.5px;
+}
+
+#ski a:hover{
+    background-color: #85B742;
+    font-size: 1.3rem;
+    margin-left: -4px;
+}
+
+#projects a:hover{
+    background-color: #85B742;
+    font-size: 1.3rem;
+    margin-left: -6.5px;
+}
+
+#logo{
+    height: 80px;
+}
+
+#email{
+    margin-right: auto;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: -50px;
+}
+
+#button{
+    background-color: #85B742;
+    border: 1px solid #ACE2DC;
+    border-radius: 50%;
+    height: 50px;
+    width: 150px;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold ;
+}
+
+#button:hover{
+    background-color: #CBE659;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
+}
+
+.section2{
+    position: relative;
+    height: 700px;
+    overflow:hidden;
+}
+
+h1{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    animation: fadein 2s;
+}
+
+#firstParagraph{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    animation: fade 4s;
+}
+
+.firstBackground{
+    object-fit: fill;
+    width: 100vw;
+    height: 700px;
+    overflow:hidden;
+}
+
+.section3{
+    position: relative;
+    height: 350px;
+    background-color: white;
+    width: 100%;
+}
+
+#whoIam{
+    width: 100%;
+}
+
+.carousel-inner{
+    height: 700px;
+}
+
+.myFace{
+    position: absolute;
+    top:35%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+    border: solid 2px #222B46;
+}
+
+h2{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#bottomLogo{
+    border-radius: 50%;
+}
+
+h3{
+    font-size: 1.8rem;
+}
+
+.skills{
+    text-align: center;
+    height: 800px;
+    background-image: url(./images/b6.png);
+    background-size: cover;
+}
+
+#skills1{
+    display: inline-block;
+    position: relative;
+    bottom: 133px;
+    left: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+#skills2{
+    display: inline-block;
+    position: relative;
+    bottom: 243px;
+    left: 300px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.3rem;
+}
+
+#imgSkills1{
+    object-fit: fill;
+    height: 230px;
+    position: relative;
+    right: 265px;
+    top: 100px;
+}
+
+#imgSkills2{
+    object-fit: fill;
+    height: 230px;
+    position: relative;
+    right: 265px;
+    top: -10px;
+}
+
+#skills1List{
+    text-align: left;
+    margin-left: 125px;
+    list-style-type: disc;
+    color: black;
+}
+
+#skills2List{
+    text-align: left;
+    margin-left: 125px;
+    list-style-type: disc;
+    color: black;
+}
+
+#examplesOfWork{
+    background-color: lightyellow;
+}
+
+#footerSection{
+    background-color: #222B46;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#skills1List li{
+    list-style-type: none;
+}
+
+#skills2List li{
+    list-style-type: none;
+}
+
+/*#jsSkill::before{
+    background-image: url(./images/javascript.png);
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 20px; 
+    height: 20px;
+    content:"";
+    margin-right: 10px;
+}*/
+
+#project1{
+    object-fit: contain;
+    height: 700px;
+}
+
+#project2{
+    object-fit: contain;
+    height: 700px;
+}
+
+#project3{
+    object-fit: contain;
+    height: 700px;
+}
+
+#arrowPrevious{
+    position: absolute;
+    left: 0px;
+    width: 100px;
+    /*background: #222B46 ;*/
+    opacity: 1;
+}
+
+#arrowNext{
+    position: absolute;
+    right: 0px;
+    width: 100px;
+    /*background: #222B46 ;*/
+    opacity: 1;
+}
+
+
+@keyframes fadein{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fade{
+
+    0% {opacity: 0;};
+
+    10%{opacity: 0;}
+
+    20%{opacity: 0;};
+
+    30%{opacity: 0;};
+
+    65%{opacity: 0.5;}
+
+    100%{opacity: 1;};
+}
+
+.pressed{
+    box-shadow: 1px 0px 0px 1px white;
+    opacity: 0.5;
+}
+
+@media (max-width: 1420px){
+    #firstParagraph{
+        padding-top: 30px;
+}
+    }
+
+@media (max-width:1400px){
+
+    .carousel-inner{
+        height: 600px;
+    }
+
+    #examplesOfWork{
+        height: 600px;
+    }
+
+    #project1{
+        object-fit: contain;
+        height: 600px;
+    }
+
+    #project2{
+        object-fit: contain;
+        height: 600px;
+    }
+
+    #project3{
+        object-fit: contain;
+        height: 600px;
+    }
+
+}
+
+@media (max-width:1200px){
+
+    .section2{
+        width: 100%;
+        height: 600px;
+    }
+
+    .firstBackground{
+        object-fit: fill;
+        width: 100%;
+        height: 600px;
+    }
+
+    .carousel-inner{
+        height: 500px;
+    }
+
+    #examplesOfWork{
+        height: 500px;
+    }
+
+    #project1{
+        object-fit: contain;
+        height: 500px;
+    }
+
+    #project2{
+        object-fit: contain;
+        height: 500px;
+    }
+
+    #project3{
+        object-fit: contain;
+        height: 500px;
+    }
+}
+
+@media (max-width:992px){
+
+    .section1{
+        gap: 30px;
+    }
+
+    .icon{
+        display: inline-block;
+    }
+    
+    .dbutton{
+        display: inline-block;
+        position: relative;
+        left: 5px;
+        height: 45px;
+        width: 45px;
+        top: 9px;
+    }
+
+    svg{
+        pointer-events: none;
+        position: relative;
+        right: 40px;
+        bottom: 7px;
+    }
+    
+    .dropdown-content{
+        top: 55px;
+        right: -50px;
+    }
+
+    #topbar{
+        display: none;
+    }
+    
+    .show {
+        display: block;
+      }
+
+    #button{
+        border: 1px solid #ACE2DC;
+        height: 45px;
+        width: 135px;
+        font-size: 1.1rem;
+        margin-right: 0px;
+    }
+
+    #cv{
+        display: inline;
+        position: relative;
+        right: 20px;
+    }
+
+    #email{
+        font-size: 1rem;
+    }
+
+    #email a:hover{
+        font-size: 1.2rem;
+    }
+  
+    .section2{
+        width: 100%;
+        height: 520px;
+    }
+
+    .firstBackground{
+        object-fit: fill;
+        width: 100%;
+        height: 520px;
+    }
+
+    .myFace{
+        height: 120px;
+        width: 120px;
+    }
+
+    .section3{
+        height: 280px;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .skills{
+        height: 520px;
+        width: 100%;
+    }
+
+    h3{
+        font-size: 1.25rem;
+    }
+
+    #skills1{
+        font-size: 14px;
+        bottom: 100px;
+        left: 200px;
+    }
+
+    #skills2{
+        font-size: 14px;
+        bottom: 205px;
+        left: 200px;
+    }
+    
+    #imgSkills1{
+        height: 160px;
+        right: 155px;
+        top: 60px;
+    }
+
+    #imgSkills2{
+        height: 160px;
+        right: 155px;
+        top: -45px;
+    }
+
+    #skills1List{
+        margin-left: 75px;
+        margin-top: 0px;
+    }
+
+    #skills2List{
+        margin-left: 75px;
+    }
+    
+    #list1{
+        position: relative;
+        bottom: 10px;
+    }
+
+    #list2{
+        position: relative;
+        bottom: 10px;
+    }
+
+    .carousel-inner{
+        height: 390px;
+    }
+
+    #examplesOfWork{
+        height: 380px;
+    }
+
+    #project1{
+        object-fit: contain;
+        height: 380px;
+    }
+
+    #project2{
+        object-fit: contain;
+        height: 380px;
+    }
+
+    #project3{
+        object-fit: contain;
+        height: 380px;
+    }
+
+    #firstParagraph{
+        top:53%;
+    }
+
+#footerSection{
+    height: 115px;
+    }
+
+#footer{
+    height: 115px;
+    font-size: 14px;
+    }
+
+footer{
+    height: 115px;
+    }
+}
+
+@media (max-width:900px){
+
+    .section2{
+        width: 100%;
+        height: 500px;
+    }
+
+    .firstBackground{
+        object-fit: fill;
+        width: 100%;
+        height: 500px;
+    }
+
+    .skills{
+        height: 500px;
+        width: 100%;
+    }
+
+    #imgSkills1{
+        height: 150px;
+    }
+
+    #imgSkills2{
+        height: 150px;
+    }
+
+    #heading1{
+        font-size: 30px;
+    }
+
+    #firstParagraph{
+        font-size: 15px;
+        top:52%;
+    }
+
+    #skills1{
+        bottom: 90px;
+    }
+
+    #skills2{
+        bottom: 195px;
+    }
+}
+
+@media (max-width:768px){
+    .carousel-inner{
+        height: 290px;
+    }
+
+    #work{
+        height: 290px;
+        width: 100%;
+    }
+    #examplesOfWork{
+        height: 280px;
+        max-width: 100%;
+    }
+
+    #button1{
+        width: 20px;
+        height: 3px;
+    }
+
+    #button2{
+        width: 20px;
+        height: 3px;
+    }
+
+    #button3{
+        width: 20px;
+        height: 3px;
+    }
+
+    #arrowPrevious{
+        width: 25px;
+        height: 290px;
+    }
+
+    #arrowNext{
+        width: 25px;
+        height: 290px;
+    }
+
+    #project1{
+        object-fit: contain;
+        height: 280px;
+        width: auto;
+    }
+
+    #project2{
+        object-fit: contain;
+        height: 280px;
+        width: auto;
+    }
+
+    #project3{
+        object-fit: contain;
+        height: 280px;
+        width: auto;
+    }
+
+    .section1{
+        gap: 20px;
+        width: 100%;
+    }
+
+    .icon{
+        display: inline-block;
+    }
+    
+    .dropdown-content{
+        top: 45px;
+        right: -50px;
+    }
+
+    .dlinks{
+        padding: 4px 8px;
+        font-size: 0.9rem;
+    }
+    
+    #topbar{
+        display: none;
+    }
+    
+    .show {
+        display: block;
+      }
+
+    #button{
+        border: 1px solid #ACE2DC;
+        height: 35px;
+        width: 120px;
+        font-size: 0.9rem;
+        margin-right: 0px;
+    }
+
+    .dbutton{
+        display: inline-block;
+        position: relative;
+        left: 5px;
+        height: 35px;
+        width: 35px;
+        top: 5px;
+    }
+
+    svg{
+        position: relative;
+        right: 30px;
+        bottom: 6px;
+        height:35px;
+        width: 35px;
+        pointer-events: none;
+    }
+
+    #cv{
+        display: inline;
+        position: relative;
+        right: 30px;
+    }
+
+    #logo{
+        height: 60px ;
+    }
+
+    #email{
+        font-size: 0.9rem;
+        margin-left: -25px;
+    }
+
+    #email a:hover{
+        font-size: 1rem;
+    }
+
+    #nameAndDescription{
+        width: 100%;
+        height: 400px;
+    }
+
+    .section2{
+        width: 100%;
+        height: 400px;
+    }
+
+    .firstBackground{
+        object-fit: fill;
+        width: 100%;
+        height: 400px;
+    }
+
+    #heading1{
+        font-size: 25px;
+        top:35%;
+    }
+
+    #firstParagraph{
+        font-size: 13px;
+        top:45%;
+    }
+
+    .myFace{
+        height: 90px;
+        width: 90px;
+    }
+
+    .section3{
+        height: 220px;
+        width: 100%;
+    }
+
+    h2{
+        font-size: 16px;
+    }
+
+    .skills{
+        height: 400px;
+        width: 100%;
+    }
+
+    #skills1{
+        font-size: 10px;
+        bottom: 70px;
+        left: 150px;
+    }
+
+    h3{
+        font-size: 15px;
+    }
+
+    #skills2{
+        font-size: 10px;
+        bottom: 160px;
+        left: 150px;
+    }
+    
+    #imgSkills1{
+        height: 120px;
+        right: 135px;
+        top: 50px;
+    }
+
+    #imgSkills2{
+        height: 120px;
+        right: 135px;
+        top: -40px;
+    }
+
+    #skills1List{
+        margin-left: 45px;
+        margin-top: 0px;
+    }
+
+    #skills2List{
+        margin-left: 45px;
+    }
+    
+    #list1{
+        position: relative;
+        bottom: 10px;
+    }
+
+    #list2{
+        position: relative;
+        bottom: 10px;
+    }
+
+    #footerSection{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #footer{
+        width: 100%;
+    }
+
+    #footerSection{
+        height: 110px;
+    }
+    
+    #footer{
+        height: 110px;
+        font-size: 13px;
+    }
+    
+    footer{
+        height: 110px;
+    }
+
+}
+
+@media (max-width:652px){
+    #heading1{
+        font-size: 28px;
+        top: 35%;
+    }
+
+    #firstParagraph{
+        font-size: 12px;
+        top:45%;
+    }
+}
+
+@media (max-width:563px){
+
+    #heading1{
+        font-size: 22px;
+        top: 35%;
+    }
+
+    #firstParagraph{
+        font-size: 10px;
+        top:43%;
+    }
+
+}
+
+
+
+
